@@ -71,7 +71,7 @@ function LoginForm() {
       />
 
       <Button
-        text={loading ? "Loading..." : "Login"}
+        text={loading ? "Please wait..." : "Login"}
         onClick={handleLogin}
         disabled={loading}
       />

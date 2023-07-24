@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+
+//loader function for all component
 function Loader() {
   return (
     <div className="wrapper">

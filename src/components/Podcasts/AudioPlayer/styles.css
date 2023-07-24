@@ -1,14 +1,15 @@
 .custom-audio-player {
   width: 100vw;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   padding: 1rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: rgba(14, 2, 21, 0.5);
+  background-color: rgba(25, 10, 34, 0.5);
+  border-radius: 600px;
 }
 
 .display-image-player {

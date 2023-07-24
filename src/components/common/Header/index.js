@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Link, useLocation } from "react-router-dom";
 
+//header function 
 function Header() {
   const location = useLocation();
   const currentPath = location.pathname;

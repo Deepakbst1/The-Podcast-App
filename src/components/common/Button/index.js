@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+// button function to handle click
 function Button({ text, onClick, disabled, width }) {
   return (
     <div

@@ -9,6 +9,7 @@ import { setUser } from "../../../slices/userSlice";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+// name,email,password,cnf password (sign up)
 function SignupForm() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -61,6 +62,9 @@ function SignupForm() {
         setLoading(false);
       }
     } else {
+
+      //authentication part pr user 
+
       if (password != confirmPassword) {
         toast.error(
           "Please Make Sure your password and Confirm Password matches!"
@@ -71,13 +75,13 @@ function SignupForm() {
         );
       }
       setLoading(false);
-      // throw an error
+     
     }
   };
 
   return (
     <>
-      <InputComponent
+      <InputComponent 
       //     input component of user (name)
         state={fullName}
         setState={setFullName}
@@ -109,8 +113,8 @@ function SignupForm() {
         type="password"
         required={true}
       />
-      <Button
-        text={loading ? "Loading..." : "Signup"}
+      <Button 
+        text={loading ? "Please be patience..." : "Signup"}
         disabled={loading}
         onClick={handleSignup}
       />

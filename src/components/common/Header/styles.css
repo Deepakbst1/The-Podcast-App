@@ -2,14 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.0rem;
+  padding: 1.0rem;
+  /* font-weight: 600; */
   /* border: 2px solid red; */
 }
 
 .links {
   display: flex;
+  /* border: 2px solid rgb(0, 200, 255); */
+  border-radius: 5rem;
+  padding: 20px;
+  background-color: rgb(86, 208, 61);
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1.55rem;
   align-items: center;
 }
 
@@ -20,8 +25,10 @@
 }
 
 .links a:hover {
-  color: rgb(245, 253, 87);
-  transition: all 0.3s;
+  /* font-weight: 500; */
+  font-size:x-large;
+  color: rgb(223, 234, 17);
+  transition: all 0.5s;
 }
 
 .gradient {

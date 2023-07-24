@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./styles.css";
 import { FaPlay, FaPause, FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 
+//Function for playing and uploading audio
 function AudioPlayer({ audioSrc, image }) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMute, setIsMute] = useState(false);
@@ -88,7 +89,6 @@ function AudioPlayer({ audioSrc, image }) {
 
   return (
     <div className="custom-audio-player">
-      <img src={image} className="display-image-player" />
       <audio ref={audioRef} src={audioSrc} />
       <p className="audio-btn" onClick={togglePlay}>
         {isPlaying ? <FaPause /> : <FaPlay />}
